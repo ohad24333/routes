@@ -1,0 +1,22 @@
+
+
+<h1>Cat Facts</h1>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fact</th>            
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let f of catFacts let i = index "[attr.data-index]="i">
+                <th scope="row">{{i+1}}</th>
+                <td>{{f.text}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
