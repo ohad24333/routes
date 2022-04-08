@@ -1,6 +1,8 @@
-
- <button type="button" class="btn btn-primary" (click)="onClick()" >
-     Show Picture
-</button>
-
+<div class="row">
+    <div class="col-12">
+        <button type="button" class="btn btn-primary" (click)="onClick()" >
+            Show Picture
+       </button>
+    </div>
+</div>
 <img *ngIf="isCllickOn"  src="{{pic.message}}" alt="" >

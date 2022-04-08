@@ -9,12 +9,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { DogsComponent } from './components/dogs/dogs.component';
 import { CatsComponent } from './components/cats/cats.component';
 import { FoxComponent } from './components/fox/fox.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 const webRoutes:Routes = [
   {path:'',component:DogsComponent},
   {path:'dogs',component:DogsComponent},
   {path:'cats',component:CatsComponent},
-  {path:'fox',component:FoxComponent},
+  {path:'foxes',component:FoxComponent},
   
 ];
 
@@ -23,7 +24,8 @@ const webRoutes:Routes = [
     AppComponent,
     DogsComponent,
     CatsComponent,
-    FoxComponent
+    FoxComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
